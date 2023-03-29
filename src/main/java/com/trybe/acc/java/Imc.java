@@ -3,8 +3,14 @@ package com.trybe.acc.java;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Imc {
+/**
+ * Class.
+ */
 
+public class Imc {
+  /**
+   * Method.
+   */
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in).useLocale(Locale.US);
