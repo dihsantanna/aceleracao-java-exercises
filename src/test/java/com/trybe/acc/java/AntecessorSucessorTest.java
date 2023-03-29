@@ -13,27 +13,24 @@ public class AntecessorSucessorTest {
 	@Test
 	@DisplayName("1 - A aplicação pergunta, no terminal, um número")
 	public void testeMain() {
-		
-	     String userInput = String.format("5",
-	             System.lineSeparator()       
-	     );
-	     
-	     ByteArrayInputStream bais = new ByteArrayInputStream(userInput.getBytes());
-	     System.setIn(bais);
 
-	     String esperado = "O número 5 tem 4 como seu antecessor e 6 como seu sucessor.";
-	     
-	     ByteArrayOutputStream baos = new ByteArrayOutputStream();
-	     PrintStream printStream = new PrintStream(baos);
-	     System.setOut(printStream);
+		String userInput = String.format("5", System.lineSeparator());
 
-	     AntecessorSucessor.main(null);
+		ByteArrayInputStream bais = new ByteArrayInputStream(userInput.getBytes());
+		System.setIn(bais);
 
-	     String[] linha = baos.toString().split(System.lineSeparator());
-	     String saida = linha[linha.length-1];
-	     
-	     assertEquals(esperado,saida);
-    
-	     
+		String esperado = "O número 5 tem 4 como seu antecessor e 6 como seu sucessor.";
+
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		PrintStream printStream = new PrintStream(baos);
+		System.setOut(printStream);
+
+		AntecessorSucessor.main(null);
+
+		String[] linha = baos.toString().split(System.lineSeparator());
+		String saida = linha[linha.length - 1];
+
+		assertEquals(esperado, saida);
+
 	}
 }
