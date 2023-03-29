@@ -10,12 +10,13 @@ public class Area {
       Scanner scan = new Scanner(System.in).useLocale(Locale.US);
 
       System.out.println("Digite a medida do lado do quadrado:");
-      double lado = scan.nextDouble();
+      double lado = scan.nextDouble();   
+      scan.close();
       
       // Seu código aqui
-
-
+      double area = Math.pow(lado,  2);
+      
       // Imprime a saída no console. OBS: descomente a próxima linha
-      //System.out.println("A area do quadrado de lado "+ lado + " é igual a " + area);
+      System.out.println("A area do quadrado de lado "+ lado + " é igual a " + area);
    }
 }
