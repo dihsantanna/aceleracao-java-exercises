@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ConverteBytes {
   /**
    * Method.
-   * 
+   *
    * @param args
    */
   public static void main(String[] args) {
@@ -20,10 +20,9 @@ public class ConverteBytes {
     byte valor = scan.nextByte();
     scan.close();
 
-    // Seu código aqui
+    int qtdBits = valor * 8;
 
-    // Imprime a saída no console. OBS: descomente a próxima linha
-    // System.out.println(valor + " bytes correspondem a " + qtdBits + " bits");
+    System.out.println(valor + " bytes correspondem a " + qtdBits + " bits");
 
   }
 }
