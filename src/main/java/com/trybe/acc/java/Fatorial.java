@@ -1,14 +1,23 @@
 package com.trybe.acc.java;
 
+/**
+ * Class.
+ */
+
 public class Fatorial {
+  /**
+   * Method.
+   */
+  public static void main(String[] args) {
+    long x = 18;
+    long f18 = x;
 
-	public static void main(String[] args) {
-	    //Seu código aqui
-		
-			
-			// Imprime a saída no console. OBS: descomente a próxima linha
-			//System.out.println("O fatorial de 18 é igual a " + fatorial18);
+    while (x > 1) {
+      x--;
+      f18 = f18 * x;
+    }
 
-	}
+    System.out.println("O fatorial de 18 é igual a " + f18);
+  }
 
 }
