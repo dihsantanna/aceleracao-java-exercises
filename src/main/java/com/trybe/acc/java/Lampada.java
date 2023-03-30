@@ -1,13 +1,22 @@
 package com.trybe.acc.java;
 
+/**
+ * Class.
+ */
+
 public class Lampada {
+  /**
+   * Attribute.
+   */
+  private static boolean state = false;
 
-	public static void main(String[] args) {
-			// Seu código aqui
-						
-			// Imprime a saída no console. OBS: descomente a próxima linha
-			//System.out.println("A lampada ligada: " + isLigada + "!");
+  /**
+   * Method.
+   */
+  public static void main(String[] args) {
+    boolean isOn = state = !state;
+    System.out.println("A lampada ligada: " + isOn + "!");
 
-	}
+  }
 
 }
