@@ -10,8 +10,6 @@ import java.util.Scanner;
 public class ConverteBytes {
   /**
    * Method.
-   *
-   * @param args
    */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in).useLocale(Locale.US);
