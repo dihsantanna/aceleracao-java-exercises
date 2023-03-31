@@ -6,24 +6,35 @@ import java.util.Random;
  * Classe ConexaoDiscada.
  *
  */
-public class ConexaoDiscada {
 
+public class ConexaoDiscada {
   /**
    * Método principal.
    *
    */
   public static void main(String[] args) {
-    // Seu código aqui
+    short tentativa = 1;
+    boolean conexao;
+    do {
+      conexao = conectou();
+      if (conexao) {
+        System.out.println("Conectado após " + tentativa + " tentativas!");
+        break;
+      }
+      tentativa++;
+    } while (tentativa <= 3);
+
+    if (!conexao) {
+      System.out.println("Não Conectou!");
+    }
   }
 
-  // Chame esta função escrevendo `conectou()`
   static boolean conectou() {
     return conexaoDiscada.verdadeiroOuFalso();
   }
 
   static ConexaoDiscada conexaoDiscada = new ConexaoDiscada();
 
-  // Retorna verdadeiro ou falso
   boolean verdadeiroOuFalso() {
     return new Random().nextInt(2) == 1;
   }
