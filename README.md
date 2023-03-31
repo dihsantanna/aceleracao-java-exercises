@@ -21,4 +21,26 @@ Repositório criado para armazenar os exercícios realizados na Aceleração de 
 
 </details>
 
----
+<details>
+  <summary>
+    <strong>Estruturas condicionais e de repetição</strong>
+  </summary>
+  <br>
+
+- [x] [`do while` Conexão Discada](/02-estruturas-condicionais-e-de-repeticao/do-while-conexao-discada)
+- [x] [`for` Números Pares](/02-estruturas-condicionais-e-de-repeticao/for-numeros-pares)
+- [x] [`if-else` Desafio Estado Brasileiro](/02-estruturas-condicionais-e-de-repeticao/if-else-desafio-estado-brasileiro)
+- [ ] `while-desafio` Números Aleatórios
+
+</details>
+
+<details>
+  <summary>
+    <strong>Finalmente o "Hello, World!" em Java</strong>
+  </summary>
+  <br>
+
+- [ ] Idade em Dias
+- [ ] Média Anual
+
+</details>
