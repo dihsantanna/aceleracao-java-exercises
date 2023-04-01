@@ -2,7 +2,7 @@ package com.trybe.idadeemdias;
 
 import java.util.Scanner;
 
-/**
+/*
  * Classe Main.
  */
 
@@ -12,33 +12,18 @@ public class Main {
    */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-
     System.out.println("Qual é o seu nome?");
-
-    String nome = scan.next();
-
-    System.out.println("Qual é sua idade em anos, meses e dias?");
-    System.out.println("anos:");
-
-    String anos = scan.next();
-
+    String nomeDeUsuario = scan.next();
+    System.out.println("Qual é sua idade em anos, meses e dias?\nanos:");
+    int anosDeIdade = scan.nextInt();
     System.out.println("meses:");
-
-    String meses = scan.next();
-
+    int mesesDaIdade = scan.nextInt();
     System.out.println("dias:");
-
-    String dias = scan.next();
-
+    int diasDaIdade = scan.nextInt();
     scan.close();
-
     Pessoa pessoa = new Pessoa();
-    int idadeEmDias = pessoa.calcularIdadeEmDias(
-        Integer.parseInt(anos),
-        Integer.parseInt(meses),
-        Integer.parseInt(dias));
-
-    System.out.println("Olá " + nome + ", sua idade em dias é " + idadeEmDias);
+    int idadeEmDias = pessoa.calcularIdadeEmDias(anosDeIdade, mesesDaIdade, diasDaIdade);
+    System.out.println("Olá " + nomeDeUsuario + ", sua idade em dias é " + idadeEmDias);
   }
 
 }

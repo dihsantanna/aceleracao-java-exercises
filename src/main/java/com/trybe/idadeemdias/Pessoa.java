@@ -6,7 +6,8 @@ package com.trybe.idadeemdias;
 
 public class Pessoa {
   /**
-   * Metodo calcularIdadeEmDias. Para simplificar, foi considerado que todos os
+   * Metodo calcularIdadeEmDias.
+   * Para simplificar, foi considerado que todos os
    * anos possuem 365 dias e todos os meses 30.
    */
   public int calcularIdadeEmDias(int anos, int meses, int dias) {
