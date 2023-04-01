@@ -30,7 +30,7 @@ Repositório criado para armazenar os exercícios realizados na Aceleração de 
 - [x] [`do while` Conexão Discada](/01-essenciais-de-java/02-estruturas-condicionais-e-de-repeticao/do-while-conexao-discada)
 - [x] [`for` Números Pares](/01-essenciais-de-java/02-estruturas-condicionais-e-de-repeticao/for-numeros-pares)
 - [x] [`if-else` Desafio Estado Brasileiro](/01-essenciais-de-java/02-estruturas-condicionais-e-de-repeticao/if-else-desafio-estado-brasileiro)
-- [ ] `while-desafio` Números Aleatórios
+- [x] [`while-desafio` Números Aleatórios](/01-essenciais-de-java/02-estruturas-condicionais-e-de-repeticao/while-desafio-numeros-aleatorios)
 
 </details>
 
@@ -40,7 +40,7 @@ Repositório criado para armazenar os exercícios realizados na Aceleração de 
   </summary>
   <br>
 
-- [ ] Idade em Dias
-- [ ] Média Anual
+- [x] [Idade em Dias](/01-essenciais-de-java/03-finalmente-o-hello-world-em-java/idade-em-dias)
+- [x] [Média Anual](/01-essenciais-de-java/03-finalmente-o-hello-world-em-java/media-anual)
 
 </details>
