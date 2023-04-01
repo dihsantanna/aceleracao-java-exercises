@@ -12,18 +12,28 @@ public class Main {
    */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
+
+    String nome;
     System.out.println("Qual é o seu nome?");
-    String nomeDeUsuario = scan.next();
+    nome = scan.next();
+
+    int anos;
     System.out.println("Qual é sua idade em anos, meses e dias?\nanos:");
-    int anosDeIdade = scan.nextInt();
+    anos = scan.nextInt();
+
+    int meses;
     System.out.println("meses:");
-    int mesesDaIdade = scan.nextInt();
+    meses = scan.nextInt();
+
+    int dias;
     System.out.println("dias:");
-    int diasDaIdade = scan.nextInt();
-    scan.close();
+    dias = scan.nextInt();
+
     Pessoa pessoa = new Pessoa();
-    int idadeEmDias = pessoa.calcularIdadeEmDias(anosDeIdade, mesesDaIdade, diasDaIdade);
-    System.out.println("Olá " + nomeDeUsuario + ", sua idade em dias é " + idadeEmDias);
+    int idadeEmDias = pessoa.calcularIdadeEmDias(anos, meses, dias);
+
+    System.out.println("Olá " + nome + ", sua idade em dias é " + idadeEmDias);
+    scan.close();
   }
 
 }
