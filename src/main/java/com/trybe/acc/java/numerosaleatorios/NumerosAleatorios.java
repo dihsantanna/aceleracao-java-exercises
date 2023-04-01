@@ -12,10 +12,12 @@ public class NumerosAleatorios {
    */
   public static void main(String[] args) {
     int numero = numeroAleatorio();
-    while(numero != 4 ) {
+
+    while (numero != 4) {
       imprime(numero);
       numero = numeroAleatorio();
     }
+
     imprime(numero);
   }
 
